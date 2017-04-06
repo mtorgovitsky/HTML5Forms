@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="forms.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <form name="userLogin" method="post" action="login.aspx">
+        <fieldset>
+            <legend>Enter Your log in details:</legend>
+            <div id="usernameField" class="field">
+                <input id="uname" name="username" type="text" placeholder="First and last Name" />
+                <label for="uname">User's Name:</label>
+            </div>
+            <div id="passwordField" class="field">
+                <input id="pwd" name="password" type="password" placeholder="Password" />
+                <label for="uname">User's Password:</label>
+            </div>
+            <!--<div><input type="color" /></div>
+            <div><input type="date" /></div>
+            <div><input type="datetime-local" /></div>
+            <div><input type="file" /></div>
+            <div><input type="url" /></div>-->
+            <div>
+                <input id="ageCategory" name="ageCategory" list="ageRanges" />
+                <datalist id="ageRanges">
+                    <option value="Under twos"></option>
+                    <option value="2 - 7"></option>
+                    <option value="8 - 12"></option>
+                    <option value="13 - 17"></option>
+                    <option value="Adult"></option>
+                </datalist>
+            </div>
+            <div>
+                <textarea id="carDescription" name="carDescription" cols="80" rows="5" placeholder="Enter a short description of Your car" maxlength="399"></textarea>
+            </div>
+            <div>
+                <select id="carManufacturer" name="carManufacturer">
+                    <optgroup label="European">
+                        <option value="volvo">Volvo</option>
+                        <option value="audi">Audi</option>
+                    </optgroup>
+                    <optgroup label="American">
+                        <option value="chrysler">Chrysler</option>
+                        <option value="ford">Ford</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <input type="submit" value="Send" />
+    </form>
+</body>
+</html>
