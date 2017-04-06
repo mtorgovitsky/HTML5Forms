@@ -6,7 +6,7 @@
     <title></title>
 </head>
 <body>
-    <form name="userLogin" method="post" action="login.aspx">
+    <!--<form name="userLogin" method="post" action="login.aspx">
         <fieldset>
             <legend>Enter Your log in details:</legend>
             <div id="usernameField" class="field">
@@ -14,14 +14,9 @@
                 <label for="uname">User's Name:</label>
             </div>
             <div id="passwordField" class="field">
-                <input id="pwd" name="password" type="password" placeholder="Password" />
+                <input id="pwd" name="password" type="password" placeholder="Password" autofocus />
                 <label for="uname">User's Password:</label>
             </div>
-            <!--<div><input type="color" /></div>
-            <div><input type="date" /></div>
-            <div><input type="datetime-local" /></div>
-            <div><input type="file" /></div>
-            <div><input type="url" /></div>-->
             <div>
                 <input id="ageCategory" name="ageCategory" list="ageRanges" />
                 <datalist id="ageRanges">
@@ -49,6 +44,22 @@
             </div>
         </fieldset>
         <input type="submit" value="Send" />
+    </form>-->
+    
+    <!--<form id="ligonForm" action="login.aspx" method="post" autocomplete="on">
+        Email: <input name="email" type="email" placeholder="Email address" autofocus="autofocus" />
+        Password: <input name="password" type="password" autocomplete="off" required />
+        <input id="percentage" type="number" min="0" max="100" step="20" />
+        <input id="orderRef" name="orderReference" type="text" pattern="[0-9]{2}[A-Z]{3}" title="2 digits and 3 uppercase letters"/>
+        <input type="submit" />
+    </form>-->
+
+    <form id="registerForm" method="post" action="registration.aspx">
+        <div id="firstNameField" class="field">
+            <label for="firstName">First name:</label>
+            <input id="firstName" name="firstName" required placeholder="Your first name" />
+            <span style="color: red">*</span>
+        </div>
     </form>
 </body>
 </html>
